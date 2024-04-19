@@ -1,0 +1,412 @@
+@media screen and (max-width: 1229px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-image {
+        max-width: 530px;
+    }
+
+    .main-pulse {
+        max-width: 235px;
+        max-height: 235px;
+    }
+
+    .second {
+        max-width: 235px;
+        max-height: 235px;
+    }
+
+    .main-image img {
+        max-width: 100%;
+    }
+
+    .macaroons-image {
+        max-width: 500px;
+    }
+
+    .macaroons-image img {
+        max-width: 100%;
+    }
+
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .nav {
+        margin-left: 0;
+    }
+
+    .phone {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+
+    .choose {
+        margin: 0 auto;
+        max-width: 768px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: minmax(255px, 260px) minmax(255px, 260px);
+        place-items: center;
+        grid-row-gap: 100px;
+        grid-column-gap: 30px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    .gift {
+        display: none;
+    }
+
+    .nav ul {
+        margin-right: 200px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .main .container {
+        flex-direction: column;
+    }
+
+    .main {
+        padding-top: 70px;
+        padding-bottom: 0;
+    }
+
+    .main-text {
+        margin-bottom: 50px;
+    }
+
+    .main-image {
+        position: relative;
+        right: -115px;
+        top: -75px;
+    }
+
+    .not-main .container {
+        flex-direction: column;
+        place-items: center;
+        text-align: center;
+    }
+
+    .macaroons {
+        max-width: 740px;
+    }
+
+    .macaroons-title {
+        max-width: 480px;
+       margin: 0 auto 60px auto;
+    }
+
+    .macaroons-info {
+        max-width: 685px;
+    }
+
+    .macaroons-info span {
+        display: inline;
+        max-width: 685px;
+    }
+
+    .macaroons-image {
+        max-width: 302px;
+    }
+
+    .advantage {
+        grid-template-rows: minmax(255px, 260px) minmax(255px, 260px);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+        padding-bottom: 120px;
+    }
+
+    .form .container {
+        position: relative;
+    }
+
+    .order-image {
+        order: 5;
+        margin-top: 270px;
+        max-width: 358px;
+        position: absolute;
+        right: 65px;
+        bottom: -110px;
+    }
+
+    .berry1 {
+        left: 0;
+    }
+
+    .berry2 {
+        right: -200px;
+        bottom: 400px;
+    }
+
+    .order-form {
+        margin-left: 0;
+    }
+
+    .order-text {
+        max-width: 400px;
+    }
+
+    .advantages {
+        padding-top: 20px;
+    }
+
+    .advantage {
+        place-items: baseline;
+        text-align: center;
+
+    }
+
+    .advantage-item {
+        margin: 0 auto;
+    }
+
+    .advantage-circle {
+        margin: 0 auto 13px auto;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .main {
+        padding-top: 50px;
+    }
+
+    .main .container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-text {
+        text-align: center;
+        margin: 40px auto;
+        font-size: 16px;
+    }
+
+    .main-image {
+        max-width: 250px;
+        position: relative;
+        right: unset;
+        top: unset;
+    }
+
+    .main-pulse {
+        max-width: 135px;
+        max-height: 135px;
+        top: 55px;
+        right: 50px;
+    }
+
+    .second {
+        max-width: 135px;
+        max-height: 135px;
+        top: 55px;
+        right: 50px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .main-action {
+        margin-bottom: 38px;
+    }
+
+    .main {
+        padding-bottom: 43px;
+    }
+
+    .choose {
+        grid-template-columns: 1fr;
+    }
+
+    .choice-title {
+        font-size: 30px;
+        margin-bottom: 122px;
+    }
+
+    .macaroons-title {
+        font-size: 30px;
+    }
+
+    .macaroons-info {
+        font-size: 16px;
+    }
+
+    .advantages {
+        padding-bottom: 100px;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+    }
+
+    .advantage-info {
+        font-size: 13px;
+    }
+
+    .choice {
+        padding-top: 100px;
+    }
+
+    .order-title {
+        font-size: 30px;
+    }
+
+    .order-text {
+        font-size: 16px;
+    }
+
+    .berry2 {
+        display: none;
+    }
+
+   .berry1 {
+       top: -585px;
+       left: -31px;
+   }
+
+    .order-input {
+        height: 60px;
+        max-width: 345px;
+    }
+
+    .order-action .button{
+        max-width: 345px;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-first {
+        position: relative;
+    }
+
+    .rights {
+        position: relative;
+        bottom: -175px;
+    }
+
+    .footer-second {
+        order: 3;
+        margin-top: 35px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000c9;
+        z-index: 100;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+
+    .nav.open {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 25px;
+    }
+
+    .nav .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: rgb(232, 187, 127);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        font-size: 25px;
+        font-family: GilroyMedium, sans-serif;
+        color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+
+}
+
+@media screen and (min-width: 570px) and (max-width: 766px) {
+
+    .berry1 {
+        top: -160px;
+        left: 255px;
+    }
+
+    .order-image {
+       position: absolute;
+    }
+    
+}
+
+@media screen and (min-width: 375px) and (max-width: 570px) {
+    .order-img {
+        display: none;
+    }
+
+    .berry1 {
+        top: -550px;
+        left: -90px;
+    }
+}
+
+
+@media screen and (max-width: 374px) {
+
+
+    .advantage {
+        grid-row-gap: 55px;
+        grid-column-gap: 10px;
+    }
+
+    .second-title {
+        max-width: 115px;
+        margin: 0 auto 20px auto;
+    }
+
+    .order-img {
+        display: none;
+    }
+}

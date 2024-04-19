@@ -1,0 +1,610 @@
+@font-face {
+    font-family: GilroyRegular;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: GilroyMedium;
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+    font-family: GilroyExtra;
+    src: url("../fonts/Gilroy-Extrabold.ttf");
+}
+
+@font-face {
+    font-family: Tavolga;
+    src: url("../fonts/Tavolga.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: GilroyRegular, sans-serif;
+}
+
+.header {
+    padding: 38px 0 30px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 232px;
+}
+
+.nav ul {
+    list-style: none;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: GilroyMedium, sans-serif;
+    color: rgb(119, 11, 29);
+}
+
+.nav-item {
+    border-bottom: 2px solid transparent;
+    transition: all 0.6s ease;
+    padding-bottom: 2px;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid rgb(119, 11, 29);
+}
+
+.phone {
+    margin-left: 328px;
+    font-size: 16px;
+    font-family: GilroyBold, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: #eba8b1;
+}
+
+.main {
+    padding-top: 127px;
+    padding-bottom: 108px;
+}
+
+.main .container {
+    display: flex;
+}
+
+.main-info {
+    max-width: 580px;
+}
+
+.main-title {
+    font-size: 55px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.091;
+    margin-bottom: 60px;
+}
+
+.main-text {
+    font-size: 18px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    max-width: 346px;
+    margin-bottom: 80px;
+}
+
+.button {
+    font-family: GilroyBold, sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: -moz-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
+}
+
+.main-action .button {
+    padding: 19px 45px;
+    font-size: 18px;
+}
+
+.main-image {
+    margin-left: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.main-pulse {
+    border-radius: 50%;
+    width: 235px;
+    height: 235px;
+    border: 1px solid rgb(162, 35, 55);
+    position: absolute;
+    top: 125px;
+    right: 130px;
+    animation: main-pulse 2.5s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.second {
+    border-radius: 50%;
+    width: 235px;
+    height: 235px;
+    border: 1px solid rgb(162, 35, 55);
+    position: absolute;
+    top: 125px;
+    right: 130px;
+    animation: main-pulse-second 2.5s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes main-pulse {
+    0% {
+        transform:scale(1);
+        opacity: 70%;
+
+    }
+
+    100% {
+        transform:scale(3);
+        opacity: 0%;
+    }
+}
+
+@keyframes main-pulse-second {
+    0% {
+        transform:scale(1);
+        opacity: 70%;
+
+    }
+
+    100% {
+        transform:scale(3);
+        opacity: 0%;
+    }
+}
+
+.not-main {
+    background-color: #ffefef;
+    padding-top: 120px;
+    padding-bottom: 44px;
+}
+
+.not-main .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.macaroons {
+    max-width: 480px;
+}
+
+
+.macaroons-title {
+    font-size: 45px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.222;
+    margin-bottom: 60px;
+}
+
+.macaroons-info {
+    max-width: 400px;
+    font-size: 18px;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+}
+
+.macaroons-info span {
+    display: inline-block;
+    max-width: 400px;
+}
+
+.macaroons-image {
+    margin-top: 60px;
+}
+
+.advantages {
+    background-color: #ffefef;
+    padding-bottom: 120px;
+    padding-top: 86px;
+}
+
+.advantage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.advantage-item {
+    max-width: 240px;
+}
+
+.advantage-circle {
+    height: 70px;
+    width: 70px;
+    background-color: #821328;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 13px;
+    transition: all 0.3s ease;
+}
+
+.advantage-number {
+    font-size: 60px;
+    font-family: GilroyExtra, sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: -10px;
+    transition: all 0.3s ease;
+}
+
+.advantage-item:hover .advantage-number {
+    color: #821328;
+}
+
+.advantage-item:hover .advantage-circle{
+    background-color: #eba8b1;
+}
+
+.advantage-title {
+    font-size: 20px;
+    font-family: GilroyExtra, sans-serif;
+    color: rgb(51, 25, 7);
+    margin-bottom: 20px;
+}
+
+.advantage-info {
+    font-size: 15px;
+    font-family: GilroyMedium, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.333;
+}
+
+.choice {
+    background-color: #eba8b1;
+    padding: 120px 0 120px 0;
+}
+
+.choice-title {
+    text-align: center;
+    font-size: 45px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 143px;
+}
+
+.choose {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.choose-item {
+    height: 230px;
+    width: 255px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 109px 20px 25px 20px;
+    position: relative;
+}
+
+.choose-image {
+    position: absolute;
+    top: -60px;
+    left: 30px;
+    transition: all 0.3s ease;
+}
+
+.choose-item:hover .choose-image {
+    transform: scale(1.15);
+}
+
+.choose-image img {
+    height: 120px;
+    width: 184px;
+}
+
+.choose-title {
+    font-size: 18px;
+    font-family: Tavolga,sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.choose-order {
+    display: flex;
+    width: 255px;
+}
+
+.choose-order-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.choose-order-info span {
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.choose-order-action button {
+    padding: 20px 30px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.choose-order-action {
+    margin-left: 25px;
+}
+
+.form {
+    background-color: #ffefef;
+    padding: 100px 0 120px 0;
+}
+
+.form .container {
+    display: flex;
+}
+
+.order-image {
+    margin-left: 15px;
+    margin-top: 68px;
+    position: relative;
+}
+
+.berry1 {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    animation: berry1 3s ease-in-out infinite;
+}
+
+@keyframes berry1 {
+    0% {
+        transform: translate(0,40px);
+    }
+
+    50% {
+        transform: translate(0,0);
+    }
+
+    100% {
+        transform: translate(0,40px);
+    }
+}
+
+.berry2 {
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    animation: berry2 4s ease-in-out infinite;
+}
+
+@keyframes berry2 {
+    0% {
+        transform: translate(0,-50px);
+    }
+
+    50% {
+        transform: translate(0,0);
+    }
+
+    100% {
+        transform: translate(0,-50px);
+    }
+}
+
+.order-form {
+    margin-left: 162px;
+    position: relative;
+}
+
+.order-title {
+    font-size: 45px;
+    font-family: Tavolga,sans-serif;
+    color: rgb(51, 25, 7);
+    margin-bottom: 41px;
+}
+
+.order-text {
+    font-size: 18px;
+    font-family: GilroyRegular, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    margin-bottom: 8px;
+}
+
+.input-title {
+    font-size: 18px;
+    font-family: GilroyBold, sans-serif;
+    color: rgb(18, 10, 6);
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.order-input {
+    border: 1px solid #821328;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 30px;
+    padding: 23px 26px;
+    margin-top: 15px;
+    height: 60px;
+    width: 293px;
+    font-size: 15px;
+    color: rgb(18, 10, 6);
+    font-family: GilroyBold, sans-serif;
+}
+
+.order-input::placeholder {
+    font-size: 15px;
+    font-family: GilroyBold, sans-serif;
+    color: rgb(118, 12, 34);
+}
+
+.order-action {
+    margin-top: 15px;
+}
+
+.order-action .button {
+    height: 60px;
+    width: 293px;
+    font-size: 18px;
+}
+
+.footer {
+    padding: 73px 0 80px 0;
+    background-color: #c0707c;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-second {
+    text-align: center;
+}
+
+.footer-second a {
+    text-decoration: none;
+}
+
+.footer-third {
+    text-align: right;
+    font-size: 16px;
+    font-family: GilroyBold, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.rights {
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: GilroyRegular, sans-serif;
+    color: rgb(227, 172, 180);
+}
+
+.insta-text {
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: GilroyBold, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.gift {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 10;
+}
+
+.gift-img {
+    background: radial-gradient(#740b20, #c23b4f);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    place-items: center;
+    transition: all 0.3s ease;
+    order: 4;
+    display: grid;
+    margin-left: 20px;
+}
+
+.gift:hover .gift-img {
+    box-shadow: 0px 0px 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.bubble {
+    position: relative;
+    background: #feefee;
+    border-radius: 10px;
+    border: 2px solid #770a1d;
+    font-size: 15px;
+    font-family: GilroyMedium, sans-serif;
+    color: rgb(119, 10, 29);
+    width: 172px;
+    height: 64px;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 12px 10px;
+    transform: translate(0,170%);
+    opacity: 0%;
+    transition: all 0.4s ease-out;
+    order: 0;
+}
+
+.bubble-arrow {
+    background: #feefee;
+    border-right: 2px solid #770a1d;
+    border-top: 2px solid #770a1d;;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -7px;
+    top: 24px;
+}
+
+.gift:hover .bubble {
+    transform: translate(0,0);
+    opacity: 100%;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
